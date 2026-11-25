@@ -1,20 +1,53 @@
 <!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Valewright – Coming Soon</title><meta name="description" content="Valewright – Baue. Wirtschafte. Herrsche. Ein Aufbauspiel von Odenforge. Bald verfügbar.">
 <style>
-*{box-sizing:border-box}html,body{margin:0;height:100%}
-body{font-family:Georgia,'Times New Roman',serif;color:#f4e6c8;background:radial-gradient(ellipse at 50% 120%,#3f5a2a 0%,#1d2a16 45%,#0f140c 100%);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-.hills{position:fixed;left:0;right:0;bottom:0;height:38vh;pointer-events:none}
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:Georgia,'Times New Roman',serif;color:#f4e6c8;background:#0f140c;text-align:center}
+a{color:#e9c46a}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at 50% 120%,#3f5a2a 0%,#1d2a16 45%,#0f140c 100%)}
+.hills{position:absolute;left:0;bottom:0;width:100%;height:38vh;pointer-events:none;display:block}
 .box{position:relative;z-index:1;padding:24px}
 h1{font-size:clamp(48px,11vw,110px);margin:0;letter-spacing:4px;color:#e9c46a;text-shadow:0 4px 18px rgba(0,0,0,.6)}
 .sub{font-size:clamp(16px,3.2vw,24px);letter-spacing:3px;opacity:.9;margin:6px 0 34px}
 .soon{display:inline-block;border:2px solid #c9a24a;border-radius:40px;padding:12px 34px;font-size:clamp(18px,3.6vw,26px);letter-spacing:6px;color:#e9c46a;background:rgba(0,0,0,.25)}
 .dev{margin-top:46px;display:flex;align-items:center;justify-content:center;gap:10px;opacity:.85;font-size:14px}
-.dev img{height:38px}a{color:#e9c46a}
+.dev img{height:38px}
+.more{position:absolute;bottom:22px;left:0;right:0;z-index:1;font-size:14px;letter-spacing:2px;opacity:.8;text-decoration:none}
+.more span{display:inline-block;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(5px)}}
+.feat{background:#17220f;padding:64px 20px 40px}
+.feat h2{font-size:clamp(26px,5vw,40px);color:#e9c46a;margin:0 0 8px;letter-spacing:2px}
+.feat .lead{opacity:.85;margin:0 auto 36px;max-width:640px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;max-width:1100px;margin:0 auto;text-align:left}
+.card{background:linear-gradient(160deg,#2a3a1e,#1c2814);border:1px solid #4a5a2e;border-radius:14px;padding:20px 20px 18px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.card .ic{font-size:28px;line-height:1}
+.card h3{margin:10px 0 6px;color:#e9c46a;font-size:19px}
+.card p{margin:0;line-height:1.55;opacity:.9;font-size:15px}
+footer{background:#0f140c;padding:22px 16px;font-size:13px;opacity:.8}
 </style></head><body>
+<section class="hero">
 <svg class="hills" viewBox="0 0 1600 400" preserveAspectRatio="none"><path d="M0,260 C200,180 380,230 560,190 C760,140 900,230 1100,180 C1300,130 1450,200 1600,170 L1600,400 L0,400Z" fill="#22321a"/><path d="M0,320 C240,260 420,310 640,280 C860,250 1020,320 1240,290 C1420,265 1520,300 1600,290 L1600,400 L0,400Z" fill="#17220f"/></svg>
 <div class="box">
 <h1>Valewright</h1>
 <div class="sub">Baue. Wirtschafte. Herrsche.</div>
 <div class="soon">COMING SOON</div>
 <div class="dev"><img src="odenforge-logo.svg" alt="" onerror="this.remove()"><span>ein Spiel von <b>Odenforge</b></span></div>
-</div><div style="position:fixed;bottom:10px;left:0;right:0;text-align:center;font-size:13px;z-index:2;opacity:.75"><a href="https://odenforge.itch.io/">odenforge.itch.io</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div></body></html>
+</div>
+<a class="more" href="#erwartet">Was dich erwartet <span>▾</span></a>
+</section>
+<section class="feat" id="erwartet">
+<h2>Was dich erwartet</h2>
+<p class="lead">Ein Aufbau- und Wirtschaftsspiel, in dem du jedem Siedler bei der Arbeit zusehen kannst – von der ersten Holzfällerhütte bis zum blühenden Herrschaftssitz.</p>
+<div class="grid">
+<div class="card"><div class="ic">🏡</div><h3>Dein eigenes Tal</h3><p>Gründe eine Siedlung in einem stillen Tal – im Fachwerkstil, inspiriert von echten Häusern aus dem Odenwald.</p></div>
+<div class="card"><div class="ic">⚒️</div><h3>Über 50 Gebäude</h3><p>Jeder Siedler arbeitet sichtbar: Holzfäller fällen Bäume, Bauern säen ihre Felder, Bäcker backen, Bergleute schürfen.</p></div>
+<div class="card"><div class="ic">🔗</div><h3>Echte Warenketten</h3><p>Vom Baumstamm bis zum Goldschmuck – Träger bringen jede Ware direkt dorthin, wo sie gebraucht wird.</p></div>
+<div class="card"><div class="ic">⛰️</div><h3>Weite Gebirgszüge</h3><p>Kohle, Eisen, Stein und Gold liegen tief in den Bergen – dein Rutengänger muss sie erst finden.</p></div>
+<div class="card"><div class="ic">🏠</div><h3>Von der Hütte zum Herrenhaus</h3><p>Wohnhäuser wachsen in fünf Stufen, wenn deine Bürger zufrieden sind – mit Brot, Bier, Käse, Kleidung und mehr.</p></div>
+<div class="card"><div class="ic">⚔️</div><h3>Land erobern</h3><p>Erweitere dein Gebiet mit Wachtürmen und verteidige es gegen rivalisierende Herrscher in drei Stärken.</p></div>
+<div class="card"><div class="ic">📖</div><h3>Eine Kampagne</h3><p>„Die Chronik von Valewright – Buch I: Das Erbe des Tals“ führt dich Kapitel für Kapitel durch das Spiel.</p></div>
+<div class="card"><div class="ic">🌍</div><h3>Deutsch &amp; Englisch</h3><p>Valewright erscheint von Anfang an in beiden Sprachen.</p></div>
+</div>
+</section>
+<footer><a href="https://odenforge.itch.io/">odenforge.itch.io</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
+</body></html>
